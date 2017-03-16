@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- Startup for program. -->
+    <StartupCommand>~/.randwall &amp;</StartupCommand>
+    <StartupCommand>compton --config ~/.config/compton.conf --shadow-exclude 'n:a:Conky' -CGb &amp;</StartupCommand>    
+    <StartupCommand>sleep 1s &amp;&amp; volumeicon &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_all &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_key &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_up &amp;</StartupCommand>
+    <StartupCommand>sleep 4s &amp;&amp; notify-send "Welcome to Kibojoe GNU/Linux!" &amp;</StartupCommand>
+    <StartupCommand>sleep 5s &amp;&amp; xautolock -time 30 -locker 'i3lock -c c59a7a' &amp;</StartupCommand>
+    <StartupCommand>sleep 6s &amp;&amp; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>
+    <StartupCommand>sleep 7s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
+    <StartupCommand>sleep 8s &amp;&amp; update-notifier &amp;</StartupCommand>
+    <StartupCommand>sleep 8s &amp;&amp; numlockx &amp;</StartupCommand>
+        
+</JWM>
