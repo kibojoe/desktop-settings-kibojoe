@@ -15,7 +15,7 @@
 	<Menu label="CLI Utilities">   
 		<Program label="IS">sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/is;exec bash'"</Program>
 		<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Program>        	
-		<Program label="MJWMPost">sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Program>
+		<Program label="KJWMPost">sakura -c 80 -r 27 -T KJWMPost -e "bash -c '/usr/bin/kjwmpost;exec bash'"</Program>
                 <Program label="NMTUI">sakura -T NMTUI -e "bash -c 'nmtui'"</Program>
 		<Program label="Pacli-SysClean">sakura -c 80 -r 27 -T Pacli-SysClean -e "bash -c '/usr/bin/pacli;exec bash'"</Program>                     	
         	<Program label="TouchMon">sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Program>                
@@ -35,19 +35,19 @@
 	</Menu>
 	<Separator/>
 	<Menu label="Help">
-	<Menu label="Manjaro">
+	<Menu label="Kibojoe-Manjaro">
                 <Program label="Kibojoe User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
         	<Program label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
       	<Separator/>	
-                <Program label="ArchLinux Wiki">palemoon https://wiki.archlinux.org/</Program>	  
-                <Program label="Manjaro Forum">palemoon https://forum.manjaro.org/</Program>  
-		<Program label="Manjaro News">palemoon https://manjaro.org/news/</Program>
-		<Program label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
+                <Program label="ArchLinux Wiki">$BROWSER https://wiki.archlinux.org/</Program>	  
+                <Program label="Kibojoe Forum">$BROWSER ????????</Program>
+		<Program label="Manjaro Forum">$BROWSER https://forum.manjaro.org/</Program>  
+		<Program label="Manjaro Wiki">$BROWSER https://wiki.manjaro.org/index.php?title=Main_Page</Program>
 	</Menu>
 	<Menu label="JWM">
-        	<Program label="JWM Project">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
-        	<Program label="JWM Configuration">palemoon http://joewing.net/projects/jwm/config.shtml</Program>
-		<Program label="JWM Wiki ArchLinux">palemoon https://wiki.archlinux.org/index.php/JWM</Program>
+        	<Program label="JWM Project">$BROWSER http://joewing.net/projects/jwm/index.shtml</Program>        
+        	<Program label="JWM Configuration">$BROWSER http://joewing.net/projects/jwm/config.shtml</Program>
+		<Program label="JWM Wiki ArchLinux">$BROWSER https://wiki.archlinux.org/index.php/JWM</Program>
 	</Menu>
 	</Menu>
 	<Separator/>
