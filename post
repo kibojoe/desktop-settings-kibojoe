@@ -2,6 +2,6 @@
 git status
 git add *
 git commit -a -m "update and etc"
-git push
+git push origin master
 sleep 2
 clear && kill -9 -$PPID
