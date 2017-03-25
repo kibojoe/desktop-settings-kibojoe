@@ -35,10 +35,9 @@
 	</Menu>
 	<Separator/>
 	<Menu label="Support">
-	<Menu label="Kibojoe-Manjaro">
+	<Menu label="Kibojoe">
                 <Program label="Kibojoe User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
-        	<Program label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
-      	<Separator/>	
+        <Separator/>	
                 <Program label="ArchLinux Wiki">$BROWSER https://wiki.archlinux.org/</Program>	  
                 <Program label="Kibojoe Forum">$BROWSER ????????</Program>
 		<Program label="Manjaro Forum">$BROWSER https://forum.manjaro.org/</Program>  
