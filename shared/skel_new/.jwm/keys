@@ -32,8 +32,7 @@
     <Key mask="4" key="t">exec:sakura -c 80 -r 27</Key>
     <Key mask="4" key="d">showdesktop</Key>
     <Key mask="4" key="m">exec:deadbeef</Key>
-    <Key key="Print">exec:scrot -e 'mv $f ~/Downloads' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Downloads'</Key>
-
+    
     <!-- Key system. -->
     <Key mask="4" key="F1">root:3</Key>
     <Key mask="4" key="p">exec:sakura -c 80 -r 27 -T Pacli-SysClean -e "bash -c '/usr/bin/pacli;exec bash'"</Key>
@@ -60,6 +59,6 @@
 
     <!-- Key general. -->
     <Key mask="4" key="g">exec:epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Key>
-    <Key key="Print">exec:scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Key>
-
+   <Key key="Print">exec:scrot -e 'mv $f ~/Downloads' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Downloads'</Key>
+    
 </JWM>
