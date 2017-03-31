@@ -15,7 +15,8 @@
 	<Menu label="CLI Utilities">   
 		<Program label="IS">sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/is;exec bash'"</Program>
 		<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Program>        	
-		<Program label="KJWMPost">sakura -c 80 -r 27 -T KJWMPost -e "bash -c '/usr/bin/kjwmpost;exec bash'"</Program>
+                <Program label="KDUSM">sakura -c 80 -r 27 -T KDUSM -e "bash -c '/usr/bin/kdusm;exec bash'"</Program>		
+                <Program label="KJWMPost">sakura -c 80 -r 27 -T KJWMPost -e "bash -c '/usr/bin/kjwmpost;exec bash'"</Program>
                 <Program label="NMTUI">sakura -T NMTUI -e "bash -c 'nmtui'"</Program>
 		<Program label="Pacli-SysClean">sakura -c 80 -r 27 -T Pacli-SysClean -e "bash -c '/usr/bin/pacli;exec bash'"</Program>                     	
         	<Program label="TouchMon">sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Program>                

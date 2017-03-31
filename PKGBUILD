@@ -1,7 +1,7 @@
 # Maintainer: Holmes <holmes_holmes [at] live [dot] com>
 
 pkgname=base-skel-kibojoe
-pkgver=20170329
+pkgver=20170331
 pkgrel=1
 pkgdesc='Kibojoe Linux base skeleton files'
 arch=('any')
