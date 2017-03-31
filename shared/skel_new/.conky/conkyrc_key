@@ -30,7 +30,6 @@ Mod4 + j = JWMConf
 Mod4 + l = Lock Screen
 Mod4 + m = Player Sound
 Mod4 + n = Connect Network
-Mod4 + o = TouchMon
 Mod4 + p = Pacli-SysClean
 Mod4 + t = Terminal
 Mod4 + u = Restart JWM
