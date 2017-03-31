@@ -1,1 +1,4 @@
+www.google-analytics.com:HSTS	0	17256	1501819257956,1,1
+www.facebook.com:HSTS	0	17256	1506484859295,1,0
+um.simpli.fi:HSTS	0	17256	1554004860091,1,1
 forum.manjaro.org:HSTS	0	17141	1487980135741,1,0
