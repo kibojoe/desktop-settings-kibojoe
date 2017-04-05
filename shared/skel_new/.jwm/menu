@@ -40,7 +40,7 @@
                 <Program label="Kibojoe User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
         <Separator/>	
                 <Program label="ArchLinux Wiki">$BROWSER https://wiki.archlinux.org/</Program>	  
-                <Program label="Kibojoe Forum">$BROWSER http://kibojoe-linux.2374255.n4.nabble.com/</Program>
+                <Program label="Kibojoe Forum">$BROWSER http://forum.kibojoe.org/</Program>
 		<Program label="Manjaro Forum">$BROWSER https://forum.manjaro.org/</Program>  
 		<Program label="Manjaro Wiki">$BROWSER https://wiki.manjaro.org/index.php?title=Main_Page</Program>
 	</Menu>
