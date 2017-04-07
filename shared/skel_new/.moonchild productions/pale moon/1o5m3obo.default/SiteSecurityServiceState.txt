@@ -1,4 +1,4 @@
-www.google-analytics.com:HSTS	2	17262	1502334371777,1,1
+www.google-analytics.com:HSTS	3	17263	1502421441070,1,1
 stats.g.doubleclick.net:HSTS	0	17261	1502250498082,1,1
 www.facebook.com:HSTS	1	17261	1506914927018,1,0
 manjaro.org:HSTS	0	17262	1522984181466,1,0
