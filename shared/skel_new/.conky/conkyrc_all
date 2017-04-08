@@ -60,8 +60,8 @@ ${voffset 10}$alignr${color} Kibojoe Linux ${execi 10000 awk -F'=' '/DISTRIB_REL
 ${voffset 10}$alignr${execi 1200 whoami} on ${nodename}
 ${alignr}${font Cantarell:size=10}Uptime ${uptime_short} 
 ${alignr}${font Cantarell:size=10}Temperatures ${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
-${alignr}${font Cantarell:size=10}${alignr}Kernel ${exec /usr/bin/kernel_conky_wrapper}
+${alignr}${font Cantarell:size=10}${alignr}Kernel ${exec /usr/bin/kibojoe/kernel_conky_wrapper}
 ${alignr}${font Cantarell:size=10}${alignr}Architecture ${machine}
 ${alignr}${font Cantarell:size=10}${alignr}File System ${fs_type}
-${alignr}${font Cantarell:size=10}${alignr} ${exec /usr/bin/jwm_conky_wrapper}
+${alignr}${font Cantarell:size=10}${alignr} ${exec /usr/bin/kibojoe/jwm_conky_wrapper}
 ]]

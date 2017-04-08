@@ -59,7 +59,7 @@
     <Key mask="4" key="Right">maxright</Key>
 
     <!-- Key general. -->
-    <Key mask="4" key="g">exec:epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Key>
+    <Key mask="4" key="g">exec:epdfview /usr/share/doc/kibojoe/User_Orientation_Guide.pdf</Key>
    <Key key="Print">exec:scrot -e 'mv $f ~/Downloads' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Downloads'</Key>
     
 </JWM>
