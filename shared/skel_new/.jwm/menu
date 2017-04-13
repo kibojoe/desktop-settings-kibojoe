@@ -37,7 +37,7 @@
 	<Separator/>
 	<Menu label="Support">
 	<Menu label="Kibojoe">
-                <Program label="Kibojoe User Orientation Guide">epdfview /usr/share/doc/kibojoe/User_Orientation_Guide.pdf</Program>
+                <Program label="User Orientation Guide">epdfview /usr/share/doc/kibojoe/User_Orientation_Guide.pdf</Program>
         <Separator/>	
                 <Program label="ArchLinux Wiki">$BROWSER https://wiki.archlinux.org/</Program>	  
                 <Program label="Kibojoe Forum">$BROWSER http://forum.kibojoe.org/</Program>
