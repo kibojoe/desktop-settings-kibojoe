@@ -13,6 +13,7 @@
 		<Include>exec: xdgmenumaker -n -f jwm</Include>
 	</Menu>
 	<Menu label="CLI Utilities">   
+	        <Program label="FLocate">sakura -c 80 -r 27 -T FLocate -e "bash -c '/usr/bin/kibojoe/flocate;exec bash'"</Program>
 		<Program label="IS">sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/kibojoe/is;exec bash'"</Program>
 		<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/kibojoe/jwmconf;exec bash'"</Program>        	
                 <Program label="KDUSM">sakura -c 80 -r 27 -T KDUSM -e "bash -c '/usr/bin/kibojoe/kdusm;exec bash'"</Program>		
