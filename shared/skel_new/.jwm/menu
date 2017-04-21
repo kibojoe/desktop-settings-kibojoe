@@ -4,7 +4,7 @@
     <!-- The root menu. -->
 	<RootMenu onroot="3">
 	        <Program label="Run">gmrun</Program>
-        	<Program label="Search">catfish</Program>
+        	<Program label="Locate">sakura -c 80 -r 27 -T FLocate -e "bash -c '/usr/bin/kibojoe/flocate;exec bash'"</Program>
         	<Program label="Terminal">sakura -c 80 -r 27</Program>
         	<Program label="File Manager">pcmanfm</Program>
         	<Program label="Web Browser">palemoon</Program>
