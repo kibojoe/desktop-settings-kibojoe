@@ -2,6 +2,7 @@
 <JWM>
 
     <!-- Startup for program. -->
+    <!-- <StartupCommand>~/.fehbg &amp;</StartupCommand> -->
     <StartupCommand>~/.randwall &amp;</StartupCommand>
     <StartupCommand>compton --config ~/.config/compton.conf --shadow-exclude 'n:a:Conky' -CGb &amp;</StartupCommand>    
     <StartupCommand>sleep 1s &amp;&amp; volumeicon &amp;</StartupCommand>
