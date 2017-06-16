@@ -20,5 +20,5 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-Updates currently ${execi 10800 checkupdates | wc -l} | Last update ${execi 10800 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17} | Installed packages ${execi 10800 pacman -Q | wc -l} ${execi 10800 pacman -Qm | wc -l}
+Updates currently ${execi 10800 checkupdates | wc -l} | Last update ${execi 10800 cat /var/log/pacman.log.1 | grep 'starting full system upgrade' | tail -n1| cut --bytes=2-17} | Installed packages ${execi 10800 pacman -Q | wc -l} ${execi 10800 pacman -Qm | wc -l}
 ]]
