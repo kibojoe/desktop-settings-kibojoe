@@ -41,7 +41,7 @@ ${color1}${top_mem name 3}$alignr${top_mem mem_res 3}
 ${color1}${top_mem name 4}$alignr${top_mem mem_res 4}
 ${color1}$stippled_hr
 ${color1}${voffset 10}Root$alignr${fs_size /} | ${fs_used /}
-${color1}Datos$alignr${fs_size /home} | ${fs_used /home}
+${color1}Home$alignr${fs_size /home} | ${fs_used /home}
 ${color1}Swap$alignr$swapmax | $swap
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
 Connection${alignr}wireless
