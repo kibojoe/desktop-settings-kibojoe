@@ -1,0 +1,32 @@
+#!/bin/sh
+#
+####################################################
+# Kibojoe Linux 			           #
+# Updated 03.08.2017 23:59:02 		           #
+# Version 0.1-1 			           #
+# Name upnotifier_conky ; Update Notifier Conky    #
+# Use chmod +x upnotifier_conky ; /usr/bin/kibojoe #
+# Credits Chrysostomus (Manjaro Linux)             #
+# Site http://polr.me/1gmk                         #
+# Adapted Holmes (Kibojoe Linux)		   #
+# Site http://kibojoe.org                          #
+# License Copyleft                                 #
+####################################################
+
+trap 'rm /tmp/{pacmanupdates,aurupdates} 2>/dev/null' INT TERM QUIT EXIT
+   nb_pac=$(checkupdates | tee /tmp/pacmanupdates | wc -l)
+if [ -f /usr/bin/yaourt ]; then
+   nb_aur=$(yaourt -Qua | grep "^aur/" | tee /tmp/aurupdates | wc -l)
+else
+   nb_aur=0
+fi
+
+if ((nb_pac>0 || nb_aur>0)); then
+  ((nb_aur>0)) && nb_aur="+ ${nb_aur}"
+  ((nb_aur==0)) && unset nb_aur
+  echo "Yes"
+else
+   nb_pac=0
+   nb_aur=0
+   echo  "No"
+fi

@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+#####################################################
+# Kibojoe Linux 			            #
+# Updated 24.11.2010 11:02:02 		            #
+# Version 0.1-1 			            #
+# Name jwm_conky_wrapper ; JWM Conky                #
+# Use chmod +x jwm_conky_wrapper ; /usr/bin/kibojoe #
+# Credits technosaurus (JWM)                        #
+# Site https://github.com/joewing/jwm/issues/333    #
+# License Copyleft                                  #
+#####################################################
+
+jwm -v | while read JWM VERSION OTHERGARBAGE; do
+echo $VERSION
+exit
+done

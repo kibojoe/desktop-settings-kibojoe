@@ -1,0 +1,7 @@
+! XTerm Settings
+*background: #215d9c
+*foreground: #ffffff
+xterm*reverseVideo: on
+xterm*faceName: Liberation Mono:size=10:antialias=true
+xterm*font: 7x13
+xterm*geometry: 76x27

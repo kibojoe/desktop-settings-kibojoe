@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/usr/share/backgrounds/moon_walkers_night1-dpcdpc11.png' 

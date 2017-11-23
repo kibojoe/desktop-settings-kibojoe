@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+########################################################
+# Kibojoe Linux 			               #
+# Updated 24.11.2010 11:02:02 		               #
+# Version 0.1-1 			               #
+# Name kernel_conky_wrapper ; Kernel Conky             #
+# Use chmod +x kernel_conky_wrapper ; /usr/bin/kibojoe #
+# Credits xircon (Manjaro Linux)                       #
+# Site https://forum.manjaro.org/                      #
+# License Copyleft                                     #
+########################################################
+
+str=`uname -r`
+suffix="-MANJARO"
+newstr=${str%$suffix}
+echo "${newstr}"

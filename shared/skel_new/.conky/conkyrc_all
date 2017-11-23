@@ -1,0 +1,66 @@
+conky.config = {   
+alignment = 'top_right',
+background = true,
+cpu_avg_samples = 2,
+color1 = '#ffffff',
+draw_shades = false,
+draw_outline = false,
+draw_borders = false,
+double_buffer = true,
+font = 'Cantarell:size=10',
+gap_x = 10,
+gap_y = 50,
+minimum_width = 200,
+no_buffers = true,
+own_window = true,
+own_window_type = 'desktop',
+own_window_transparent = true,
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+update_interval = 1.0,
+use_xft = true,
+}
+conky.text = [[
+${color1}${alignc}S Y S T E M    I N F O${color}
+${color1}$stippled_hr${color}
+Kibojoe Linux $alignr${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
+UH $alignr${execi 1200 whoami} on ${nodename}
+Uptime $alignr${uptime_short}
+
+${color1}CPU$alignr$cpu%
+${color1}${cpubar 3}
+${voffset 5}${color1}${top name 1}$alignr${top cpu 1}%
+${color1}${top name 2}$alignr${top cpu 2}%
+${color1}${top name 3}$alignr${top cpu 3}%
+${color1}${top name 4}$alignr${top cpu 4}%
+
+${color1}RAM$alignr$mem$font
+${color1}${membar 3}
+${color1}${voffset 5}${top_mem name 1}$alignr${top_mem mem_res 1}
+${color1}${top_mem name 2}$alignr${top_mem mem_res 2}
+${color1}${top_mem name 3}$alignr${top_mem mem_res 3}
+${color1}${top_mem name 4}$alignr${top_mem mem_res 4}
+${color1}$stippled_hr
+${color1}${voffset 10}Root$alignr${fs_size /} | ${fs_used /}
+${color1}Datos$alignr${fs_size /home} | ${fs_used /home}
+${color1}Swap$alignr$swapmax | $swap
+${voffset -7}${if_existing /proc/net/route wlp3s0}
+Connection${alignr}wireless
+Name${alignr}${wireless_essid}
+Signal${alignr}${wireless_link_qual wlp3s0}%
+${else}
+${if_existing /proc/net/route enp6s0}
+${voffset -17}Connection${alignr}cable
+${else}
+${voffset -17}Connection${alignr}no available
+${endif}${endif}
+${voffset -7}Battery$alignr${battery_percent BAT1}%
+$stippled_hr
+Kernel $alignr${exec ~/.conky/kernelconky}
+JWM ${alignr} ${exec ~/.conky/jwmconky}
+Temperatures $alignr${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
+Updates currently $alignr${exec ~/.conky/upnotifierconky}
+Installed packages $alignr${execi 10800 pacman -Q | wc -l} | ${execi 10800 pacman -Qm | wc -l}
+$stippled_hr
+${goto 75}$stippled_hr
+${goto 150}$stippled_hr
+]]

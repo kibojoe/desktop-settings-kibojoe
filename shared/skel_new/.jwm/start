@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- Startup for program. -->
+    <StartupCommand>~/.fehbg &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; notify-send "Welcome to Kibojoe Linux!" &amp;</StartupCommand>
+    <StartupCommand>sleep 4s &amp;&amp; /usr/lib/xfce-polkit/xfce-polkit &amp;</StartupCommand>
+    <StartupCommand>sleep 5s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
+    <StartupCommand>sleep 6s &amp;&amp; numlockx &amp;</StartupCommand>
+    <StartupCommand>sleep 7s &amp;&amp; xautolock -time 30 -locker 'i3lock -c 215d9c' &amp;</StartupCommand>
+    <StartupCommand>sleep 9s &amp;&amp; /usr/bin/kibojoe/upnotifier &amp;</StartupCommand>
+        
+</JWM>

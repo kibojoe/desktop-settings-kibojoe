@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- Visual Style Window. -->
+    <WindowStyle decorations="motif">
+        <Font align="center">Cantarell-10:antialias=true:encoding=utf8</Font>
+        <Width>1</Width>
+        <Height>19</Height>
+        <Corner>0</Corner>
+        <Foreground>#ffffff</Foreground>
+        <Background>#215d9c</Background>
+        <Outline>#215d9c</Outline>‮
+        <Opacity>1.0</Opacity>
+        <Active>
+            <Foreground>#ffffff</Foreground>
+            <Background>#215d9c</Background>
+            <Outline>#215d9c</Outline>
+        </Active>
+    </WindowStyle>
+
+    <!-- Visual Style Menu. -->
+    <MenuStyle decorations="flat">
+        <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
+        <Foreground>#ffffff</Foreground>
+        <Background>#262b2d</Background>
+	<Outline>#215d9c</Outline>
+        <Active>
+            <Foreground>#262b2d</Foreground>
+            <Background>#215d9c</Background>
+        </Active>
+    </MenuStyle>
+
+    <!-- Visual Style Tray. -->
+    <TrayStyle decorations="flat">
+        <Font>Cantarell-11:antialias=true:encoding=utf8</Font>
+        <Background>#262b2d</Background>
+        <Foreground>#ffffff</Foreground>
+        <Outline>#215d9c</Outline>
+        <Active>
+            <Foreground>#262b2d</Foreground>
+            <Background>#215d9c</Background>
+        </Active>
+    </TrayStyle>
+
+    <!-- Visual Style Pager. -->
+    <PagerStyle>
+        <Outline>#262b2d</Outline>
+        <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
+        <Text>#ffffff</Text>
+        <Foreground>#3b4042</Foreground>
+        <Background>#3b4042</Background>
+        <Active>
+            <Foreground>#215d9c</Foreground>
+            <Background>#7c7f81</Background>
+        </Active>
+    </PagerStyle>
+
+    <!-- Visual Style Pop. -->
+    <PopupStyle>
+        <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
+        <Outline>#000000</Outline>
+        <Foreground>#ffffff</Foreground>
+        <Background>#000000</Background>
+    </PopupStyle>
+
+    <!-- Visual Style Clock. -->
+    <ClockStyle>
+        <Font>Cantarell-10:weight=demibold:antialias=true:encoding=utf8</Font>
+        <Background>#215d9c</Background>
+    </ClockStyle>
+
+</JWM>

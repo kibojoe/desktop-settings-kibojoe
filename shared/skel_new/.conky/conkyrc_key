@@ -1,0 +1,46 @@
+conky.config = {
+alignment = 'bottom_left',
+background = true,
+cpu_avg_samples = 2,
+default_color = 'ffffff',
+draw_shades = false,
+draw_outline = false,
+draw_borders = false,
+double_buffer = true,
+font = 'Cantarell:size=10',
+gap_x = 10,
+gap_y = 360,
+minimum_width = 200,
+no_buffers = true,
+own_window = true,
+own_window_type = 'desktop',
+own_window_transparent = true,
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+update_interval = 1.0,
+use_xft = true,
+}
+conky.text = [[
+${color1}${alignc}S H O R T C U T    K E Y S${color}
+${color1}$stippled_hr${color}
+${color1}Mod1+F4${alignr}Close Win Active
+${color1}Mod4+b${alignr}Web Browser
+${color1}Mod4+f${alignr}File Manager
+${color1}Mod4+g${alignr}User Guide
+${color1}Mod4+i${alignr}IS
+${color1}Mod4+j${alignr}JWMConf
+${color1}Mod4+l${alignr}Lock Screen
+${color1}Mod4+m${alignr}Player Sound
+${color1}Mod4+p${alignr}Pacli-SysClean
+${color1}Mod4+t${alignr}Terminal
+${color1}Mod4+u${alignr}Restart JWM
+${color1}Mod4+w${alignr}Refresh Menu
+${color1}Mod4+x${alignr}IRC
+${color1}Mod4+F1${alignr}Menu JWM
+${color1}Mod4+PgUp${alignr}Increase Sound
+${color1}Mod4+PgDn${alignr}Decrease Sound
+${color1}Mod4+0${alignr}Mute Sound
+${color1}PrtSc${alignr}Screenshot
+$stippled_hr
+${goto 75}$stippled_hr
+${goto 150}$stippled_hr
+]]

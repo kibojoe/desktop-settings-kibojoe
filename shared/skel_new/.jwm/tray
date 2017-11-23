@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<JWM>
+
+  <!-- Tray of the environment. -->
+  <Tray x="0" y="-1" layout="horizontal" halign="fixed" height="24" valign="button">
+       <TrayButton label="Start">root:3</TrayButton>
+       <Spacer width="5"/>
+       <TrayButton label="Places">root:8</TrayButton>
+       <Spacer width="5"/>
+       <TrayButton label="Leave">root:7</TrayButton>
+       <Pager/>
+       <TaskList maxwidth="120" border="false"/>
+       <Dock spacing="3"/>
+       <Spacer width="5"/>
+       <Clock format="%H:%M:%S"></Clock>
+  </Tray>
+
+</JWM>
+
+
