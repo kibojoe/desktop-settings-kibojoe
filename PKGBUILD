@@ -1,8 +1,8 @@
 # Maintainer: Holmes <holmes_holmes [at] live [dot] com>
 
 pkgname=base-skel-kibojoe
-pkgver=20171028
-pkgrel=1
+pkgver=20171123
+pkgrel=0
 pkgdesc='Kibojoe Linux base skeleton files'
 arch=('any')
 url="https://github.com/kibojoe/desktop-settings-kibojoe"
