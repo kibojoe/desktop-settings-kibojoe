@@ -1,10 +1,10 @@
 # Maintainer: Holmes <holmes_holmes [at] live [dot] com>
 
 pkgname=base-skel-kibojoe
-pkgver=20171123
-pkgrel=0
+pkgver=1709
+pkgrel=7
 pkgdesc='Kibojoe Linux base skeleton files'
-arch=('any')
+arch=('x86_64')
 url="https://github.com/kibojoe/desktop-settings-kibojoe"
 license=('GPL3')
 makedepends=('git')
@@ -13,10 +13,6 @@ sha256sums=('SKIP')
 install=$pkgname.install
 depends=('')
 conflicts=('')
-
-pkgver() {
-	date +%Y%m%d
-}
 
 package() {
 	install -d $pkgdir/etc
