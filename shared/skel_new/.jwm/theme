@@ -47,11 +47,11 @@
         <Outline>#444444</Outline>
         <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
         <Text>#e5e5e5</Text>
-        <Foreground>#696969</Foreground>
-        <Background>#696969</Background>
+        <Foreground>#4c4c4c</Foreground>
+        <Background>#4c4c4c</Background>
         <Active>
-            <Foreground>#8e8e8e</Foreground>
-            <Background>#8e8e8e</Background>
+            <Foreground>#989898</Foreground>
+            <Background>#989898</Background>
         </Active>
     </PagerStyle>
 
