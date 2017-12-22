@@ -3,9 +3,9 @@
 
   <!-- Tray of the environment. -->
   <Tray x="0" y="-1" layout="horizontal" halign="fixed" height="26" valign="bottom">
-       <TrayButton icon="/home/holmes/Downloads/teste.png" popup="Start">root:3</TrayButton>
+       <TrayButton icon="/usr/share/icons/start.png" popup="Start">root:3</TrayButton>
        <Spacer width="5"/>
-       <TrayButton icon="/home/holmes/Downloads/hh.png" popup="Places">root:8</TrayButton>
+       <TrayButton icon="/usr/share/icons/places.png" popup="Places">root:8</TrayButton>
        <Spacer width="5"/>       
        <Pager/>
        <TaskList maxwidth="120" border="false"/>
@@ -13,7 +13,7 @@
        <Spacer width="5"/>
        <Clock format="%H %M %S"></Clock>
        <Spacer width="5"/>
-       <TrayButton icon="/home/holmes/Downloads/teste1.png" popup="Leave">root:7</TrayButton>
+       <TrayButton icon="/usr/share/icons/leave.png" popup="Leave">root:7</TrayButton>
   </Tray>
 
 </JWM>

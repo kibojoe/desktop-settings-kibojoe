@@ -8,6 +8,6 @@
     <StartupCommand>sleep 5s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
     <StartupCommand>sleep 6s &amp;&amp; numlockx &amp;</StartupCommand>
     <StartupCommand>sleep 7s &amp;&amp; xautolock -time 30 -locker 'i3lock -c 444444' &amp;</StartupCommand>
-    <StartupCommand>sleep 10s &amp;&amp; /usr/bin/kibojoe/upnotifier 7200 &amp;</StartupCommand>
+    <StartupCommand>sleep 10s &amp;&amp; /usr/bin/kibojoe/upnotifier &amp;</StartupCommand>
             
 </JWM>
