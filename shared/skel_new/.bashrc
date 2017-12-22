@@ -65,13 +65,14 @@ alias clean='~/clean'
 force_color_prompt=yes
 
 # Greetings
+echo
 echo Welcome to Kibojoe Linux!
 echo
 
 # Settings prompt
 CURRENTUSER=`whoami`
 if [ "$CURRENTUSER" = "root" ]; then
-  PS1="┌─ \d » \[$(tput bold)\]\[\033[38;5;196m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] on \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;6m\]\H\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;202m\]\w\[$(tput sgr0)\]\n└─ ▶ " #root
+  PS1="┌─ [ \d » \@ ] ▶ \[$(tput bold)\]\[\033[38;5;196m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] on \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;6m\]\H\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;202m\]\w\[$(tput sgr0)\]\n└─| " #root
 else
-  PS1="┌─ \d » \[$(tput bold)\]\[\033[38;5;34m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] on \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;6m\]\H\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;202m\]\w\[$(tput sgr0)\]\n└─ ▶ " #user
+  PS1="┌─ [ \d » \@ ] ▶ \[$(tput bold)\]\[\033[38;5;34m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] on \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;6m\]\H\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;202m\]\w\[$(tput sgr0)\]\n└─| " #user
 fi

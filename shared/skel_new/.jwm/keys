@@ -44,7 +44,7 @@
     <Key mask="4" key="k">exec:sakura -c 80 -r 27 -T KDUSM -e "bash -c '/usr/bin/kibojoe/kdusm;exec bash'"</Key>
     <Key mask="4" key="s">exec:sakura -c 80 -r 27 -T BFUSBTool -e "bash -c '/usr/bin/kibojoe/bfusb;exec bash'"</Key>
     <Key mask="4" key="n">exec:sakura -T NMTUI -e "bash -c 'nmtui'"</Key>
-    <Key mask="4" key="l">exec:i3lock -c 215d9c</Key>
+    <Key mask="4" key="l">exec:i3lock -c 444444c</Key>
     <Key mask="4" key="u">exec:jwm -restart</Key>
     <Key mask="4" key="w">exec:jwm -reload</Key>
 

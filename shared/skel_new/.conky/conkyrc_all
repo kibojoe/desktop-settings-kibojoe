@@ -2,7 +2,7 @@ conky.config = {
 alignment = 'top_right',
 background = true,
 cpu_avg_samples = 2,
-color1 = '#ffffff',
+default_color = '#444444',
 draw_shades = false,
 draw_outline = false,
 draw_borders = false,
@@ -20,29 +20,29 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${color1}${alignc}S Y S T E M    I N F O${color}
-${color1}$stippled_hr${color}
+${alignc}I N F O   K I B O
+$stippled_hr
 Kibojoe Linux $alignr${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
 UH $alignr${execi 1200 whoami} on ${nodename}
 Uptime $alignr${uptime_short}
 
-${color1}CPU$alignr$cpu%
-${color1}${cpubar 3}
-${voffset 5}${color1}${top name 1}$alignr${top cpu 1}%
-${color1}${top name 2}$alignr${top cpu 2}%
-${color1}${top name 3}$alignr${top cpu 3}%
-${color1}${top name 4}$alignr${top cpu 4}%
+CPU$alignr$cpu%
+${cpubar 3}
+${voffset 5}${top name 1}$alignr${top cpu 1}%
+${top name 2}$alignr${top cpu 2}%
+${top name 3}$alignr${top cpu 3}%
+${top name 4}$alignr${top cpu 4}%
 
-${color1}RAM$alignr$mem$font
-${color1}${membar 3}
-${color1}${voffset 5}${top_mem name 1}$alignr${top_mem mem_res 1}
-${color1}${top_mem name 2}$alignr${top_mem mem_res 2}
-${color1}${top_mem name 3}$alignr${top_mem mem_res 3}
-${color1}${top_mem name 4}$alignr${top_mem mem_res 4}
-${color1}$stippled_hr
-${color1}${voffset 10}Root$alignr${fs_size /} | ${fs_used /}
-${color1}Home$alignr${fs_size /home} | ${fs_used /home}
-${color1}Swap$alignr$swapmax | $swap
+RAM$alignr$mem$font
+${membar 3}
+${voffset 5}${top_mem name 1}$alignr${top_mem mem_res 1}
+${top_mem name 2}$alignr${top_mem mem_res 2}
+${top_mem name 3}$alignr${top_mem mem_res 3}
+${top_mem name 4}$alignr${top_mem mem_res 4}
+$stippled_hr
+${voffset 10}Root$alignr${fs_size /} | ${fs_used /}
+Home$alignr${fs_size /home} | ${fs_used /home}
+Swap$alignr$swapmax | $swap
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
 Connection${alignr}wireless
 Name${alignr}${wireless_essid}
@@ -61,6 +61,5 @@ Temperatures $alignr${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
 Updates currently $alignr${exec ~/.conky/upnotifierconky}
 Installed packages $alignr${execi 10800 pacman -Q | wc -l} | ${execi 10800 pacman -Qm | wc -l}
 $stippled_hr
-${goto 75}$stippled_hr
-${goto 150}$stippled_hr
+${alignc}Minimal, Fast and Elegant!
 ]]

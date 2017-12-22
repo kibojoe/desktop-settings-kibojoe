@@ -2,18 +2,18 @@
 <JWM>
 
     <!-- The root menu. -->
-    <RootMenu onroot="8">
+      <RootMenu onroot="8">
         <Program label="Home">pcmanfm ~/</Program>
         <Program label="Root">gksu pcmanfm /</Program>
-    <Separator/>
+      <Separator/>
 	<Program label="Applications">pcmanfm menu://applications/</Program>
         <Program label="Devices">pcmanfm computer:///</Program>
         <Program label="Recent File">pcmanfm recent:///</Program>
         <Program label="Trash">pcmanfm trash:///</Program>
-     </RootMenu>
-     <RootMenu onroot="7">
+      </RootMenu>
+      <RootMenu onroot="7">
                  <Program label="Logout">jwm -exit</Program>	        
-                 <Program label="Lock">i3lock -c 215d9c</Program>
+                 <Program label="Lock">i3lock -c 444444</Program>
                  <Program label="Reboot">systemctl reboot</Program>
                  <Program label="Shutdown">systemctl poweroff</Program>		
                  <Program label="Suspend">systemctl suspend</Program>        	
@@ -41,7 +41,7 @@
 	</Menu>
         <Menu label="Enable Session">   
 	        <Program label="Battery">cbatticon -u 120 -i standard -c "systemctl suspend" -l 20 -r 5</Program>
-		<Program label="Conky">conky -c ~/.conky/conkyrc_all &amp;&amp; conky -c ~/.conky/conkyrc_key</Program>
+		<Program label="Conky">conky -c ~/.conky/conkyrc_all</Program>
 		<Program label="Network">nm-applet</Program>
 		<Program label="Volume">volumeicon</Program>                
 	</Menu>

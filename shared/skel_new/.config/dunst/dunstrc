@@ -141,7 +141,7 @@ browser = palemoon
 
 [frame]
 width = 1
-color = "#215d9c"
+color = "#6d6d6d"
 
 [shortcuts]
 # Shortcuts are specified as [modifier+][modifier+]...key
@@ -167,16 +167,16 @@ context = ctrl+alt+c
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-background = "#262b2d"
-foreground = "#ffffff"
+background = "#6d6d6d"
+foreground = "#e5e5e5"
 timeout = 6
 
 [urgency_normal]
-background = "#262b2d"
-foreground = "#ffffff"
+background = "#6d6d6d"
+foreground = "#e5e5e5"
 timeout = 6
 
 [urgency_critical]
 background = "#e74c3c"
-foreground = "#ffffff"
+foreground = "#e5e5e5"
 timeout = 8
