@@ -167,12 +167,12 @@ context = ctrl+alt+c
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-background = "#6d6d6d"
+background = "#444444"
 foreground = "#e5e5e5"
 timeout = 6
 
 [urgency_normal]
-background = "#6d6d6d"
+background = "#444444"
 foreground = "#e5e5e5"
 timeout = 6
 

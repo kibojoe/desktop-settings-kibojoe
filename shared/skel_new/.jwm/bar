@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<JWM>
+
+  <!-- Tray of the environment. -->
+  <Tray y="15" decorations="flat" layer="below" layout="horizontal" halign="center" height="42">
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn-Arched/places/scalable/user-home.svg" popup="PCManFM File Manager">exec:pcmanfm</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/terminal.svg" popup="Sakura Terminal">exec:sakura</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/medit.svg" popup="Medit Editor">exec:medit</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/deepin-software-center.svg" popup=" Pacli Package Manager">exec:sakura -c 80 -r 27 -T Pacli-SysClean -e "bash -c '/usr/bin/kibojoe/pacli;exec bash'"</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/desktop-effect.svg" popup="JWMConf Configuration Tool">exec:sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/kibojoe/jwmconf;exec bash'"</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/cs-overview.svg" popup="Information System GNU/Linux">exec:sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/kibojoe/is;exec bash'"</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/palemoon.svg" popup="Pale Moon Browser">exec:palemoon</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/hexchat.svg" popup="HexChat IRC Client">exec:hexchat</TrayButton>
+  <Spacer width="5"/>
+      <TrayButton icon="/usr/share/icons/Surfn/128/apps/deadbeef.svg" popup="DeaDBeeF Player Music">exec:deadbeef</TrayButton>
+  <Spacer width="5"/>
+  </Tray>
+
+</JWM>
+
+

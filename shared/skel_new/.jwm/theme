@@ -2,28 +2,33 @@
 <JWM>
 
     <!-- Visual Style Window. -->
-    <WindowStyle decorations="motif">
+    <WindowStyle decorations="flat">
         <Font align="center">Cantarell-10:antialias=true:encoding=utf8</Font>
         <Width>2</Width>
-        <Height>19</Height>
+        <Height>22</Height>
         <Corner>0</Corner>
         <Foreground>#e5e5e5</Foreground>
-        <Background>#6d6d6d</Background>
-        <Outline>#6d6d6d</Outline>‮
-        <Opacity>1.0</Opacity>
+        <Background>#444444</Background>
+        <Outline>#444444</Outline>‮
         <Active>
             <Foreground>#e5e5e5</Foreground>
-            <Background>#6d6d6d</Background>
-            <Outline>#6d6d6d</Outline>
+            <Background>#444444</Background>
+            <Outline>#444444</Outline>
         </Active>
     </WindowStyle>
+
+    <!-- Visual Style Window Button. -->
+         <ButtonClose>/usr/share/icons/window-close.svg</ButtonClose>
+         <ButtonMax>/usr/share/icons/window-fullscreen.svg</ButtonMax>
+         <ButtonMaxActive>/usr/share/icons/window-restore.svg</ButtonMaxActive>
+         <ButtonMin>/usr/share/icons/window-minimize.svg</ButtonMin>
 
     <!-- Visual Style Menu. -->
     <MenuStyle decorations="flat">
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
         <Foreground>#e5e5e5</Foreground>
-        <Background>#6d6d6d</Background>
-	<Outline>#444444</Outline>
+        <Background>#444444</Background>
+	<Outline>#6d6d6d</Outline>
         <Active>
             <Foreground>#444444</Foreground>
             <Background>#6d6d6d</Background>
@@ -33,9 +38,9 @@
     <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
         <Font>Cantarell-11:antialias=true:encoding=utf8</Font>
-        <Background>#6d6d6d</Background>
+        <Background>#444444</Background>
         <Foreground>#e5e5e5</Foreground>
-        <Outline>#444444</Outline>
+        <Outline>#6d6d6d</Outline>
         <Active>
             <Foreground>#444444</Foreground>
             <Background>#e5e5e5</Background>
@@ -47,11 +52,11 @@
         <Outline>#444444</Outline>
         <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
         <Text>#e5e5e5</Text>
-        <Foreground>#4c4c4c</Foreground>
-        <Background>#4c4c4c</Background>
+        <Foreground>#696969</Foreground>
+        <Background>#696969</Background>
         <Active>
-            <Foreground>#989898</Foreground>
-            <Background>#989898</Background>
+            <Foreground>#8e8e8e</Foreground>
+            <Background>#8e8e8e</Background>
         </Active>
     </PagerStyle>
 
