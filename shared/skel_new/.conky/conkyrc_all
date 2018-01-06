@@ -9,7 +9,7 @@ draw_borders = false,
 double_buffer = true,
 font = 'Cantarell:size=10',
 gap_x = 10,
-gap_y = 50,
+gap_y = 80,
 minimum_width = 200,
 no_buffers = true,
 own_window = true,
@@ -20,7 +20,7 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${alignc}I N F O   K I B O
+${alignc}I N F O   S Y S T E M
 $stippled_hr
 Kibojoe Linux $alignr${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
 UH $alignr${execi 1200 whoami} on ${nodename}
@@ -31,17 +31,15 @@ ${cpubar 3}
 ${voffset 5}${top name 1}$alignr${top cpu 1}%
 ${top name 2}$alignr${top cpu 2}%
 ${top name 3}$alignr${top cpu 3}%
-${top name 4}$alignr${top cpu 4}%
 
 RAM$alignr$mem$font
 ${membar 3}
 ${voffset 5}${top_mem name 1}$alignr${top_mem mem_res 1}
 ${top_mem name 2}$alignr${top_mem mem_res 2}
 ${top_mem name 3}$alignr${top_mem mem_res 3}
-${top_mem name 4}$alignr${top_mem mem_res 4}
 $stippled_hr
 ${voffset 10}Root$alignr${fs_size /} | ${fs_used /}
-Home$alignr${fs_size /home} | ${fs_used /home}
+Datos$alignr${fs_size /run/media/holmes/datos} | ${fs_used /run/media/holmes/datos}
 Swap$alignr$swapmax | $swap
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
 Connection${alignr}wireless
@@ -61,5 +59,4 @@ Temperatures $alignr${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
 Updates currently $alignr${exec ~/.conky/upnotifierconky}
 Installed packages $alignr${execi 10800 pacman -Q | wc -l} | ${execi 10800 pacman -Qm | wc -l}
 $stippled_hr
-${alignc}Minimal, Fast and Elegant!
 ]]
