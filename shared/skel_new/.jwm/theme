@@ -28,7 +28,7 @@
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
         <Foreground>#e5e5e5</Foreground>
         <Background>#444444</Background>
-	<Outline>#6d6d6d</Outline>
+	<Outline>#444444</Outline>
         <Active>
             <Foreground>#444444</Foreground>
             <Background>#6d6d6d</Background>
@@ -40,10 +40,10 @@
         <Font>Cantarell-11:antialias=true:encoding=utf8</Font>
         <Background>#444444</Background>
         <Foreground>#e5e5e5</Foreground>
-        <Outline>#6d6d6d</Outline>
+        <Outline>#444444</Outline>
         <Active>
             <Foreground>#444444</Foreground>
-            <Background>#e5e5e5</Background>
+            <Background>#d2d2d2</Background>
         </Active>
     </TrayStyle>
 
@@ -52,25 +52,25 @@
         <Outline>#444444</Outline>
         <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
         <Text>#e5e5e5</Text>
-        <Foreground>#696969</Foreground>
-        <Background>#696969</Background>
+        <Foreground>#787878</Foreground>
+        <Background>#787878</Background>
         <Active>
-            <Foreground>#8e8e8e</Foreground>
-            <Background>#8e8e8e</Background>
+            <Foreground>#a5a5a5</Foreground>
+            <Background>#a5a5a5</Background>
         </Active>
     </PagerStyle>
 
     <!-- Visual Style Pop. -->
     <PopupStyle>
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
-        <Outline>#000000</Outline>
+        <Outline>#444444</Outline>
         <Foreground>#e5e5e5</Foreground>
-        <Background>#000000</Background>
+        <Background>#444444</Background>
     </PopupStyle>
 
     <!-- Visual Style Clock. -->
     <ClockStyle>
-        <Font>Cantarell-10:weight=demibold:antialias=true:encoding=utf8</Font>
+        <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
         <Foreground>#e5e5e5</Foreground>
     </ClockStyle>
 

@@ -2,28 +2,12 @@
 <JWM>
 
     <!-- The root menu. -->
-      <RootMenu onroot="8">
-        <Program label="Home">pcmanfm ~/</Program>
-        <Program label="Root">gksu pcmanfm /</Program>
-      <Separator/>
-	<Program label="Applications">pcmanfm menu://applications/</Program>
-        <Program label="Devices">pcmanfm computer:///</Program>
-        <Program label="Recent File">pcmanfm recent:///</Program>
-        <Program label="Trash">pcmanfm trash:///</Program>
-      </RootMenu>
-      <RootMenu onroot="7">
-                 <Program label="Logout">jwm -exit</Program>	        
-                 <Program label="Lock">i3lock -c 444444</Program>
-                 <Program label="Reboot">systemctl reboot</Program>
-                 <Program label="Shutdown">systemctl poweroff</Program>		
-                 <Program label="Suspend">systemctl suspend</Program>        	
-       </RootMenu>
-       <RootMenu onroot="3">
+      <RootMenu onroot="3">
 	        <Program label="Run">gmrun</Program>
         	<Program label="Locate">sakura -c 80 -r 27 -T FLocate -e "bash -c '/usr/bin/kibojoe/flocate;exec bash'"</Program>
         	<Program label="Terminal">sakura -c 80 -r 27</Program>
         	<Program label="File Manager">pcmanfm</Program>
-        	<Program label="Web Browser">env GTK_THEME=Adwaita:light palemoon</Program>
+        	<Program label="Web Browser">palemoon</Program>
 	<Separator/>
 	<Menu label="Applications">
 		<Include>exec: xdgmenumaker -n -f jwm</Include>
@@ -44,6 +28,15 @@
 		<Program label="Conky">conky -c ~/.conky/conkyrc_all</Program>
 		<Program label="Network">nm-applet</Program>
 		<Program label="Volume">volumeicon</Program>                
+	</Menu>
+        <Menu label="Places">   
+	        <Program label="Home">pcmanfm ~/</Program>
+        <Program label="Root">gksu pcmanfm /</Program>
+      <Separator/>
+	       <Program label="Applications">pcmanfm menu://applications/</Program>
+               <Program label="Devices">pcmanfm computer:///</Program>
+               <Program label="Recent File">pcmanfm recent:///</Program>
+               <Program label="Trash">pcmanfm trash:///</Program>
 	</Menu>
 	<Menu label="Screenshot">
 		<Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Downloads in 5s' &amp; scrot -ud 5 -e 'mv $f ~/Downloads' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Downloads'</Program>            
@@ -66,7 +59,10 @@
         	<Program label="JWM Configuration">$BROWSER http://joewing.net/projects/jwm/config.shtml</Program>
 		<Program label="JWM Wiki ArchLinux">$BROWSER https://wiki.archlinux.org/index.php/JWM</Program>
 	</Menu>
-	</Menu>     
+	</Menu>
+        <Separator/>
+        	<Program label="Leave">/usr/bin/kibojoe/leave_jwm</Program>        
+        </Menu>     
 	</RootMenu>
 
 </JWM>

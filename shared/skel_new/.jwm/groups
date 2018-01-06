@@ -3,11 +3,6 @@
 
     <!-- Options for program groups. -->
    <Group>
-        <Name>sakura</Name>
-        <Option>noborder</Option>
-    </Group>
-
-    <Group>
         <Name>gmrun</Name>
         <Option>noborder</Option>
         <Option>nolist</Option>

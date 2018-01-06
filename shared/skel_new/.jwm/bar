@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <JWM>
 
-  <!-- Tray of the environment. -->
-  <Tray y="15" decorations="flat" layer="below" layout="horizontal" halign="center" height="42">
-  <Spacer width="5"/>
+  <!-- Bar of the dock. -->
+  <Tray decorations="flat" layer="below" layout="horizontal" halign="fixed" height="42" valign="top">
+  <Spacer width="500"/>
       <TrayButton icon="/usr/share/icons/Surfn-Arched/places/scalable/user-home.svg" popup="PCManFM File Manager">exec:pcmanfm</TrayButton>
   <Spacer width="5"/>
       <TrayButton icon="/usr/share/icons/Surfn/128/apps/terminal.svg" popup="Sakura Terminal">exec:sakura</TrayButton>
@@ -21,7 +21,7 @@
       <TrayButton icon="/usr/share/icons/Surfn/128/apps/hexchat.svg" popup="HexChat IRC Client">exec:hexchat</TrayButton>
   <Spacer width="5"/>
       <TrayButton icon="/usr/share/icons/Surfn/128/apps/deadbeef.svg" popup="DeaDBeeF Player Music">exec:deadbeef</TrayButton>
-  <Spacer width="5"/>
+  <Spacer width="500"/>
   </Tray>
 
 </JWM>
