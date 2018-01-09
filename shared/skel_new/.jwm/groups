@@ -47,6 +47,11 @@
         <Name>leafpad</Name>
         <Option>maximized</Option>
     </Group>
+
+    <Group>
+        <Name>medit</Name>
+        <Option>maximized</Option>
+    </Group>
       
     <!-- Options for system groups. -->
     <Group>

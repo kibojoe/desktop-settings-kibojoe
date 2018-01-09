@@ -1,7 +1,7 @@
 # Maintainer: Holmes <holmes_holmes [at] live [dot] com>
 
 pkgname=base-skel-kibojoe
-pkgver=2018
+pkgver=20180109
 pkgrel=1
 pkgdesc='Kibojoe Linux base skeleton files'
 arch=('x86_64')

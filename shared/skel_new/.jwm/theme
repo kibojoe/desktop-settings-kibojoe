@@ -18,10 +18,10 @@
     </WindowStyle>
 
     <!-- Visual Style Window Button. -->
-         <ButtonClose>/usr/share/icons/window-close.svg</ButtonClose>
-         <ButtonMax>/usr/share/icons/window-fullscreen.svg</ButtonMax>
-         <ButtonMaxActive>/usr/share/icons/window-restore.svg</ButtonMaxActive>
-         <ButtonMin>/usr/share/icons/window-minimize.svg</ButtonMin>
+         <ButtonClose>/usr/share/icons/kibojoe/window-close.svg</ButtonClose>
+         <ButtonMax>/usr/share/icons/kibojoe/window-fullscreen.svg</ButtonMax>
+         <ButtonMaxActive>/usr/share/icons/kibojoe/window-restore.svg</ButtonMaxActive>
+         <ButtonMin>/usr/share/icons/kibojoe/window-minimize.svg</ButtonMin>
 
     <!-- Visual Style Menu. -->
     <MenuStyle decorations="flat">

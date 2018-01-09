@@ -3,7 +3,7 @@
 
   <!-- Tray of the environment. -->
   <Tray decorations="flat" layout="horizontal" halign="fixed" height="28" valign="buttom">
-       <TrayButton icon="/usr/share/icons/start.png" popup="Start">root:3</TrayButton>
+       <TrayButton icon="/usr/share/icons/kibojoe/start.png" popup="Start">root:3</TrayButton>
   <Spacer width="5"/>     
   <Pager/>
        <TaskList maxwidth="110" border="false"/>
@@ -13,7 +13,7 @@
   <Spacer width="5"/>
   <TrayButton label="holmes" popup="System User"></TrayButton>
   <Spacer width="5"/>
-      <TrayButton icon="/usr/share/icons/leave.png" popup="Leave">exec:/usr/bin/kibojoe/leavejwm</TrayButton>
+      <TrayButton icon="/usr/share/icons/kibojoe/leave.png" popup="Leave">exec:/usr/bin/kibojoe/leavejwm</TrayButton>
   </Tray>
 
 </JWM>
