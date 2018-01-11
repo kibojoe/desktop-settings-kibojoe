@@ -2,8 +2,7 @@
 <JWM>
 
     <!-- Startup for program. -->
-    <!-- <StartupCommand>~/.randwall &amp;</StartupCommand> -->
-    <StartupCommand>~/.fehbg &amp;</StartupCommand>
+    <StartupCommand>nitrogen --restore &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; notify-send "Welcome to Kibojoe Linux!" &amp;</StartupCommand>
     <StartupCommand>sleep 4s &amp;&amp; /usr/lib/xfce-polkit/xfce-polkit &amp;</StartupCommand>
     <StartupCommand>sleep 5s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
