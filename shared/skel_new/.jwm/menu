@@ -61,7 +61,7 @@
 	</Menu>
 	</Menu>
         <Separator/>
-        	<Program label="Leave">/usr/bin/kibojoe/leave_jwm</Program>        
+        	<Program label="Leave">/usr/bin/kibojoe/leavejwm</Program>        
         </Menu>     
 	</RootMenu>
 
