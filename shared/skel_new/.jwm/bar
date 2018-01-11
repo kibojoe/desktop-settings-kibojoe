@@ -3,7 +3,7 @@
 
   <!-- Bar of the dock. -->
   <Tray decorations="flat" layer="below" layout="horizontal" halign="fixed" height="40" valign="top">
-  <Spacer width="500"/>
+  <Spacer width="450"/>
       <TrayButton icon="/usr/share/icons/kibojoe/pcmanfm.svg" popup="PCManFM File Manager">exec:pcmanfm</TrayButton>
   <Spacer width="5"/>
       <TrayButton icon="/usr/share/icons/kibojoe/terminal.svg" popup="Sakura Terminal">exec:sakura</TrayButton>
@@ -22,7 +22,9 @@
   <Spacer width="5"/>
       <TrayButton icon="/usr/share/icons/kibojoe/hexchat.svg" popup="HexChat IRC Client">exec:hexchat</TrayButton>
   <Spacer width="5"/>
-      <TrayButton icon="/usr/share/icons/kibojoe/deadbeef.svg" popup="DeaDBeeF Player Music">exec:deadbeef</TrayButton>
+    <TrayButton icon="/usr/share/icons/kibojoe/nitrogen.svg" popup="Nitrogen Wallpapers">exec:nitrogen</TrayButton>
+  <Spacer width="5"/>  
+    <TrayButton icon="/usr/share/icons/kibojoe/deadbeef.svg" popup="DeaDBeeF Player Music">exec:deadbeef</TrayButton>
   <Spacer width="500"/>
   </Tray>
 

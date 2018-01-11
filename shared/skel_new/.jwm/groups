@@ -9,6 +9,11 @@
     </Group>
 
     <Group>
+        <Name>nitrogen</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
         <Name>sakura</Name>
         <Option>centered</Option>
     </Group>
