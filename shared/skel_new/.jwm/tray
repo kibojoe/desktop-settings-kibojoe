@@ -9,7 +9,7 @@
        <TaskList maxwidth="110" border="false"/>
        <Dock spacing="3"/>
   <Spacer width="5"/>
-       <Clock format="%X on %m/%d">showdesktop</Clock>
+       <Clock format="%X on %m/%d">exec:pgrep gsimplecal > /dev/null &amp;&amp; killall gsimplecal || gsimplecal</Clock>
   <Spacer width="5"/>
   <TrayButton label="kibojoe" popup="System User"></TrayButton>
   <Spacer width="5"/>
