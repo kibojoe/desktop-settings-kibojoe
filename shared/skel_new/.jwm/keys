@@ -54,7 +54,7 @@
     <Key mask="4" key="u">exec:jwm -restart</Key>
     <Key mask="4" key="w">exec:jwm -reload</Key>
 	<!-- Ctrl (Control) key. -->
-    <Key mask="C" key="l">exec:/usr/bin/kibojoe/leavejwm</Key>
+    <Key mask="C" key="l">exec:/usr/bin/kibojoe/leave_jwm</Key>
 
     <!-- Key sound. -->
 	<!-- Windows (Super) key. -->
