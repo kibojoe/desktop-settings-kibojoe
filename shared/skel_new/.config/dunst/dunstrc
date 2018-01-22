@@ -141,7 +141,7 @@ browser = palemoon
 
 [frame]
 width = 1
-color = "#6d6d6d"
+color = "#444444"
 
 [shortcuts]
 # Shortcuts are specified as [modifier+][modifier+]...key
