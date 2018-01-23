@@ -65,8 +65,8 @@
     
     <!-- Key monitor brightness. -->
 	<!-- Ctrl (Control) key. -->
-    <Key mask="C" key="Next">exec:light -A 5; notify-send 'Brightness up 5 %'</Key>
-    <Key mask="C" key="Prior">exec:light -U 5; notify-send 'Brightness down 5 %'</Key>
+    <Key mask="C" key="Next">exec:light -U 5; notify-send 'Brightness down 5 %'</Key>
+    <Key mask="C" key="Prior">exec:light -A 5; notify-send 'Brightness up 5 %'</Key>
 
     <!-- Key toggle. -->
 	<!-- Windows (Super) key. -->

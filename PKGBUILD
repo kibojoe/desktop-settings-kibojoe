@@ -2,7 +2,7 @@
 
 pkgname=base-skel-kibojoe
 pkgver=20180112
-pkgrel=1
+pkgrel=2
 pkgdesc='Kibojoe Linux base skeleton files'
 arch=('x86_64')
 url="https://github.com/kibojoe/desktop-settings-kibojoe"
