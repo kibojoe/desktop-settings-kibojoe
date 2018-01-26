@@ -2,14 +2,14 @@ conky.config = {
 alignment = 'bottom_left',
 background = true,
 cpu_avg_samples = 2,
-default_color = '444444',
+default_color = 'e5e5e5',
 draw_shades = false,
 draw_outline = false,
 draw_borders = false,
 double_buffer = true,
 font = 'Cantarell:size=10',
-gap_x = 1155,
-gap_y = 40,
+gap_x = 10,
+gap_y = 338,
 minimum_width = 200,
 no_buffers = true,
 own_window = true,
@@ -39,7 +39,7 @@ Mod4+F1${alignr}Menu JWM
 Mod4+PgUp${alignr}Increase Sound
 Mod4+PgDn${alignr}Decrease Sound
 Mod4+0${alignr}Mute Sound
-Ctrl${alignr}LeaveJWM
+Ctrl+l${alignr}LeaveJWM
 PrtSc${alignr}Screenshot
 $stippled_hr
 ]]

@@ -129,7 +129,7 @@ horizontal_padding = 10
 #  * foreground: use the same color as the foreground;
 #  * frame: use the same color as the frame;
 #  * anything else will be interpreted as a X color.
-separator_color = #215d9c
+separator_color = #444444
     
 # Print a notification on startup.
 # This is mainly for error detection, since dbus (re-)starts dunst
