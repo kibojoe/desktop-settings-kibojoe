@@ -6,7 +6,7 @@
   <Spacer/>
       <TrayButton icon="/usr/share/icons/kibojoe/pcmanfm.svg" popup="PCManFM File Manager">exec:pcmanfm</TrayButton>
   <Spacer width="5"/>
-      <TrayButton icon="/usr/share/icons/kibojoe/terminal.svg" popup="Sakura Terminal">exec:sakura</TrayButton>
+      <TrayButton icon="/usr/share/icons/kibojoe/terminal.svg" popup="LXTerminal Terminal">exec:lxterminal</TrayButton>
   <Spacer width="5"/>
       <TrayButton icon="/usr/share/icons/kibojoe/medit.svg" popup="Medit Editor">exec:medit</TrayButton>
   <Spacer width="5"/>
@@ -24,7 +24,7 @@
   <Spacer width="5"/>
     <TrayButton icon="/usr/share/icons/kibojoe/nitrogen.svg" popup="Nitrogen Wallpapers">exec:nitrogen</TrayButton>
   <Spacer width="5"/>  
-    <TrayButton icon="/usr/share/icons/kibojoe/deadbeef.svg" popup="DeaDBeeF Player Music">exec:deadbeef</TrayButton>
+    <TrayButton icon="/usr/share/icons/kibojoe/lxmusic.svg" popup="LXMusic Player Music">exec:lxmusic</TrayButton>
   <Spacer/>
   </Tray>
 
