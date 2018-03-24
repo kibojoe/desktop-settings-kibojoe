@@ -35,8 +35,7 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
-alias post='~/post'
-alias clean='~/clean'
+alias e='exit' 				  # leave of terminal
 
 # ex - archive extractor
 # usage: ex <file>
@@ -76,3 +75,6 @@ if [ "$CURRENTUSER" = "root" ]; then
 else
   PS1="┌─ \d » \@ » \[$(tput bold)\]\[\033[38;5;34m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] on \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;6m\]\H\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] in \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;202m\]\w\[$(tput sgr0)\]\n└─| " #user
 fi
+
+# Following automatically calls "startx" when you login:
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx -- -keeptty -nolisten tcp > ~/.xorg.log 2>&1

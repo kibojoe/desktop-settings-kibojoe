@@ -3,35 +3,65 @@
 # ~/.xinitrc
 #
 # Executed by startx (run your window manager from here)
-#
-#
-## Ensure that the D-Bus Communication System is running properly to fix
-## File management, authentication, and other essential system processes (I)
 
-if [ -d /etc/X11/xinit/xinitrc.d ]; then
-  for f in /etc/X11/xinit/xinitrc.d/*; do
-    [ -x "$f" ] && . "$f"
-  done
-  unset f
+# JWM is kept as default
+DEFAULT_SESSION=/usr/bin/jwm
+
+userresources=$HOME/.Xresources
+usermodmap=$HOME/.Xmodmap
+sysresources=/etc/X11/xinit/.Xresources
+sysmodmap=/etc/X11/xinit/.Xmodmap
+
+# merge in defaults and keymaps
+
+if [ -f $sysresources ]; then
+    xrdb -merge $sysresources
 fi
 
-## Ensure that GTK themes are applied uniformly in the Desktop Environment
-
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-
-## Ensure that the D-Bus Communication System is running properly to fix
-## File management, authentication, and other essential system processes (II)
-
-if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
-  eval "$(dbus-launch --sh-syntax --exit-with-session)"
+if [ -f $sysmodmap ]; then
+    xmodmap $sysmodmap
 fi
 
-## Where the default Home folders have not already been created, generate them
-
-if [ -x /usr/bin/xdg-user-dirs-update ]; then
-  /usr/bin/xdg-user-dirs-update
+if [ -f "$userresources" ]; then
+    xrdb -merge "$userresources"
 fi
 
-## Set a single desktop environment
+if [ -f "$usermodmap" ]; then
+    xmodmap "$usermodmap"
+fi
 
-exec /usr/bin/jwm
+# start some nice programs
+
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
+fi
+
+get_session(){
+	local dbus_args=(--sh-syntax --exit-with-session)
+	case $1 in
+		awesome) dbus_args+=(awesome) ;;
+		bspwm) dbus_args+=(bspwm-session) ;;
+		budgie) dbus_args+=(budgie-desktop) ;;
+		cinnamon) dbus_args+=(cinnamon-session) ;;
+		deepin) dbus_args+=(startdde) ;;
+		enlightenment) dbus_args+=(enlightenment_start) ;;
+		fluxbox) dbus_args+=(startfluxbox) ;;
+		gnome) dbus_args+=(gnome-session) ;;
+		i3|i3wm) dbus_args+=(i3 --shmlog-size 0) ;;
+		jwm) dbus_args+=(/usr/bin/jwm) ;;
+		kde) dbus_args+=(startkde) ;;
+		lxde) dbus_args+=(startlxde) ;;
+		lxqt) dbus_args+=(lxqt-session) ;;
+		mate) dbus_args+=(mate-session) ;;
+		xfce) dbus_args+=(xfce4-session) ;;
+		openbox) dbus_args+=(openbox-session) ;;
+		*) dbus_args+=($DEFAULT_SESSION) ;;
+	esac
+
+	echo "dbus-launch ${dbus_args[*]}"
+}
+
+exec $(get_session)
